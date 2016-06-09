@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 const HOST = 'localhost';
-const PORT = 3999;
+const PORT = 9999;
 const ROOT_PATH = path.resolve(__dirname, '..');
 const SRC_PATH = path.resolve(ROOT_PATH, 'src');
 const DOCS_PATH = path.resolve(ROOT_PATH, 'docs');

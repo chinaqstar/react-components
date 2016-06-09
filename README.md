@@ -4,11 +4,11 @@
 
 ## 环境准备
 
-### 安装运行
+### 运行doc文档
 ```
 $ npm i
-$ node webpack/dev-server.js
-> listen 3999
+$ cd docs && npm start
+> listen 9999
 ```
 
 ### 目录结构
