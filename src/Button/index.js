@@ -14,11 +14,11 @@ class Button extends Component {
   render() {
     const {
       children,
-      status,
+      type,
       disabled,    // 与 button 的 disabled 属性相同
       className,
       style,
-      prefixCls
+      prefixCls,
       ...others
     } = this.props;
 
