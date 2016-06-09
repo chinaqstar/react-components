@@ -1,23 +1,19 @@
-
 var path = require('path');
 var webpack = require('webpack');
-
 var config = require('../config.js');
-
-var ROOT_PATH = path.resolve(__dirname, '..');   // 根目录
-var ASSERTS_PATH = path.resolve(ROOT_PATH, './public/asserts');
+var BUILD_PATH = path.resolve(config.ROOT, './dist');
 
 module.exports = {
   devtool: 'source-map',
-  context: ROOT_PATH,
+  context: config.ROOT,
   entry: {
     app: [
       'webpack-dev-server/client?http://'+ config.HOST + ':' + config.PORT,
-      './src/app'
+      './src/index'
     ]
   },
   output: {
-    path: ASSERTS_PATH,
+    path: BUILD_PATH,
     filename: '[name]-[hash].js',
     publicPath: '/'    // 会在服务端用到（server）
   },

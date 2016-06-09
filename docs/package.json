@@ -1,0 +1,13 @@
+{
+  "name": "react-components-docs",
+  "version": "0.0.1",
+  "description": "Documentation site",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.docs.js --progress --colors --inline",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chinaqstar@gmail.com",
+  "license": "ISC",
+  "devDependencies": {}
+}
