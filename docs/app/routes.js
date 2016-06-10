@@ -3,8 +3,14 @@ import Home from './components/pages/Home'
 const routes = {
   path: '/',
   component: Home,
-  children: [
-
+  indexRoute: {
+    component: Home
+  },
+  childRoutes: [
+    {
+      path: 'home',
+      component: Home
+    }
   ]
 }
 
