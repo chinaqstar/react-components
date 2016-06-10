@@ -7,7 +7,7 @@ class Home extends Component {
     return (
       <div>
         <h1>Hello, world.</h1>
-        <Button>搜索</Button>
+        <Button color='default'>搜索</Button>
       </div>
     );
   }

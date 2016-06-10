@@ -1,1 +1,2 @@
-export Button from './Button/index';
+import './styles';
+export Button from './Button';

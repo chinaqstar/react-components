@@ -14,7 +14,7 @@ class Button extends Component {
   render() {
     const {
       children,
-      type,
+      color,
       disabled,    // 与 button 的 disabled 属性相同
       className,
       style,
@@ -24,7 +24,7 @@ class Button extends Component {
 
     const classes = classNames({
       [prefixCls]: true,
-      [`${prefixCls}-${type}`]: type,
+      [`${prefixCls}--${color}`]: color,
       [className]: className
     });
 
@@ -39,21 +39,20 @@ class Button extends Component {
       </button>
     );
   }
-
 }
 
 Button.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
-  type: PropTypes.string,
+  color: PropTypes.string,
   disabled: PropTypes.bool,
   style: PropTypes.object,
 }
 
 Button.defaultProps = {
-  type: 'default',
+  color: 'default',
   disabled: false,
-  prefixCls: 'rcui-btn'
+  prefixCls: 'mui-btn'
 }
 
 export default Button;
