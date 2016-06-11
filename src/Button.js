@@ -41,7 +41,6 @@ class Button extends Component {
 }
 
 Button.propTypes = {
-  children: PropTypes.any,
   className: PropTypes.string,
   color: PropTypes.string,
   variant: PropTypes.string,

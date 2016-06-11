@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, useRouterHistory } from 'react-router';
 import { createHashHistory } from 'history';
 import routes from './routes';
+import './scss/app.scss';
 
 const history = useRouterHistory(createHashHistory)();
 

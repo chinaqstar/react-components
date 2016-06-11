@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Button } from 'rc-ui';
+import { AppBar, Button } from 'rc-ui';
 
 class Home extends Component {
 

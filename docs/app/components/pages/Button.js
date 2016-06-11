@@ -3,6 +3,10 @@ import { Button } from 'rc-ui';
 
 class ButtonPage extends Component {
 
+  constructor(props, context) {
+    super(props, context);
+  }
+
   render() {
     return (
       <div>
@@ -10,10 +14,10 @@ class ButtonPage extends Component {
            正常按钮
         </h1>
         <div>
-        <Button>搜索</Button>
-        <Button color='primary'>搜索</Button>
-        <Button color='danger'>搜索</Button>
-        <Button color='accent'>搜索</Button>
+          <Button>搜索</Button>
+          <Button color='primary'>搜索</Button>
+          <Button color='danger'>搜索</Button>
+          <Button color='accent'>搜索</Button>
         </div>
         <div>
           <Button disabled={true}>搜索</Button>
