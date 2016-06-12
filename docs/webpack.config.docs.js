@@ -13,7 +13,7 @@ module.exports = {
   context: DOCS_PATH,
   entry: {
     app: [
-      `webpack-dev-server/client?http://${HOST}:${PORT}`,
+      // `webpack-dev-server/client?http://${HOST}:${PORT}`,
       './app'
     ]
   },
@@ -26,13 +26,19 @@ module.exports = {
     contentBase: DOCS_PATH,
     hot: true,
     inline: true,
-    port: PORT
+    port: PORT,
+    historyApiFallback: true
   },
   module: {
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
+        // include: [
+        //   path.resolve(ROOT_PATH, 'node_modules/react-router'),
+        //   SRC_PATH,
+        //   DOCS_PATH
+        // ],
         loader: 'babel',
         query: {
           presets: ["es2015", "stage-0", "react"]

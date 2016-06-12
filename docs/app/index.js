@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, useRouterHistory } from 'react-router';
-import { createHashHistory } from 'history';
+import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 import './scss/app.scss';
 
-const history = useRouterHistory(createHashHistory)();
-
 ReactDOM.render(
-  <Router history={history} children={routes}></Router>,
+  <Router history={browserHistory} children={routes}></Router>,
   document.getElementById('app')
 );
